@@ -1,0 +1,284 @@
+/* 
+Student Name: Joanne O Ethe
+File name: styles.css
+Date: 06/03/2026
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h2,
+ul,
+aside,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY */
+
+body {
+  background-color: #C8E7E7;
+}
+
+
+aside{
+  font-size: 1em;
+  }
+
+
+
+/* IMAGE STYLING */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* MOBILE DISPLAY */
+
+.mobile {
+  display: block;
+}
+
+.tab-desk {
+  display: none;
+}
+
+/* HEADER */
+
+.mobile h1 {
+  font-family: "Playfair Display", serif;
+  color: #A6035D;
+}
+
+.mobile h2 {
+  font-family: "Lora", serif;
+  color: #D9042B;
+}
+
+/* NAVIGATION */
+
+nav {
+  background-color: #A6035D;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+  border-top: 0.5px solid #C8E7E7;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 0.6em 2em;
+  text-decoration: none;
+}
+
+/* MAIN CONTENT */
+
+main {
+  padding: 2%;
+  font-family: "Lora", serif;
+  background-color: white;
+  margin: 2%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h2 {
+  padding-top: 2%;
+  color: #A6035D;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+.link {
+  color: #D9042B;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+  color: #D9042B;
+}
+
+.round {
+  border-radius: 8px;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+#contact {
+  text-align: center;
+}
+
+
+strong{
+  text-shadow:2px 2px 6px #C4A589;
+}
+
+/* CALL BUTTON */
+
+.tel-link {
+  background-color: #D9042B;
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.tel-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #A6035D;
+  color: white;
+  padding: 1% 0%;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* TABLET VIEW */
+
+@media screen and (min-width: 620px), print {
+
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  aside{
+    grid-column: 1/ span 2;
+  }
+
+}
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1921px) {
+
+  body {
+    background: linear-gradient(#C8E7E7, #C4A589);
+  }
+
+  #wrapper {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  .grid{
+    grid-template-columns: auto auto auto auto;
+  }
+
+  aside{
+    grid-column: 1 / span 4;
+    font-size: 3em;
+  }
+
+}
+
+/* PRINT */
+
+@media print {
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1000px), print {
+
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color: white;
+    background-color: #D9042B;
+  }
+
+  .grid{
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+  }
+
+  aside{
+    grid-column: 1 / span 3;
+    font-size: 2em;
+  }
+
+  #info ul {
+    margin-left: 5%;
+  }
+
+}
