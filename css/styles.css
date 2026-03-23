@@ -16,7 +16,8 @@ h2,
 ul,
 aside,
 figure,
-figcaption {
+figcaption,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -37,7 +38,7 @@ aside{
 
 /* IMAGE STYLING */
 
-img {
+img, video {
   max-width: 100%;
   display: block;
 }
