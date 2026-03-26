@@ -2,68 +2,73 @@
 <!-- 
 Student Name: Joanne O Ethe
 File name: template.html
-Date: 06/03/2026
+Date: 26/03/2026
  -->
 <html lang="en">
-  <head>
-    <title>Joannee Beauty Shop: Template</title>
-    <meta charset="utf-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap"
-      rel="stylesheet"
-    >
 
-    <link rel="shortcut icon" href="images/favicon.ico" >
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32.png"
-    >
-    <link
-      rel="apple-touch-icon"
-      sizes="128x128"
-      href="./images/phone-icon.png"
-    >
-    <link rel="icon" sizes="128x128" href="./images/phone-icon.png" >
-    <link rel="stylesheet" href="css/styles.css" >
-  </head>
+<head>
+  <title>Joannee Beauty Shop: Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap" rel="stylesheet">
 
-  <body>
-    <header>
-      <div class="tab-desk">
-        <a href="index.html"
-          ><img src="images/hero.jpg" alt="beauty products"
-        ></a>
-      </div>
-      <div class="mobile">
-        <h1>&#128132; Joannee Beauty Shop</h1>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="./images/phone-icon.png">
+  <link rel="icon" sizes="128x128" href="./images/phone-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-        
-        <h2>Discover. Beautify. Glow.</h2>
-      </div>
-    </header>
+<body>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav">
+    <div id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()">
+      <div id="icon"> &#9776;</div>
+    </a>
+  </nav>
 
-    <main>
-      <div></div>
-    </main>
 
-    <footer>
-      <p>&copy; Copyright 2026. All Rights Reserved.</p>
-      <p>
-        <a href="mailto:info@glowbeauty.com">info@glowbeauty.com</a>
-      </p>
-    </footer>
-  </body>
+
+
+  <header>
+    <div class="tab-desk">
+      <a href="index.html"><img src="images/hero.jpg" alt="beauty products"></a>
+    </div>
+    <div class="mobile">
+      <h1>&#128132; Joannee Beauty Shop</h1>
+
+
+      <h2>Discover. Beautify. Glow.</h2>
+    </div>
+  </header>
+
+  <nav class="tab-desk">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div></div>
+  </main>
+
+  <footer>
+    <p>&copy; Copyright 2026. All Rights Reserved.</p>
+    <p>
+      <a href="mailto:info@glowbeauty.com">info@glowbeauty.com</a>
+    </p>
+  </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+
 </html>

@@ -2,7 +2,7 @@
 <!-- 
 Student Name: Joanne O Ethe
 File name: contact.html
-Date: 06/03/2026
+Date: 26/03/2026
  -->
 <html lang="en">
 
@@ -24,9 +24,24 @@ Date: 06/03/2026
 </head>
 
 <body>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav">
+    <div id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()">
+      <div id="icon"> &#9776;</div>
+    </a>
+  </nav>
+
+
+
   <div id="wrapper">
     <header>
-        <div class="mobile">
+      <div class="mobile">
         <h1>&#128132; Joannee Beauty Shop</h1>
 
         <!-- Using H2 instead of H3 for proper heading hierarchy; W3C HTML Validator flagged H3 directly under H1 as invalid -->
@@ -34,7 +49,7 @@ Date: 06/03/2026
       </div>
     </header>
 
-    <nav>
+    <nav class="tab-desk">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -74,6 +89,7 @@ Date: 06/03/2026
       </p>
     </footer>
   </div>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>

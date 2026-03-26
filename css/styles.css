@@ -26,19 +26,17 @@ video {
 /* BODY */
 
 body {
-  background-color: #C8E7E7;
+  background-color: #c8e7e7;
 }
 
-
-aside{
+aside {
   font-size: 1em;
-  }
-
-
+}
 
 /* IMAGE STYLING */
 
-img, video {
+img,
+video {
   max-width: 100%;
   display: block;
 }
@@ -49,7 +47,8 @@ img, video {
   display: block;
 }
 
-.tab-desk {
+.tab-desk,
+#navlinks {
   display: none;
 }
 
@@ -57,39 +56,44 @@ img, video {
 
 .mobile h1 {
   font-family: "Playfair Display", serif;
-  color: #A6035D;
+  color: #a6035d;
+  margin: 2% 0 0 3%;
 }
 
 .mobile h2 {
   font-family: "Lora", serif;
-  color: #D9042B;
+  color: #d9042b;
 }
 
 /* NAVIGATION */
 
 nav {
-  background-color: #A6035D;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background-color: #a6035d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-nav ul {
-  list-style-type: none;
+.mobile-nav a {
+  color: #fff;
   text-align: center;
-}
-
-nav li {
-  display: block;
-  font-size: 1.5em;
-  font-family: Geneva, Arial, sans-serif;
-  font-weight: bold;
-  border-top: 0.5px solid #C8E7E7;
-}
-
-nav li a {
-  display: block;
-  color: white;
-  padding: 0.6em 2em;
+  font-size: 2em;
   text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  color: #2a1f14;
 }
 
 /* MAIN CONTENT */
@@ -100,7 +104,7 @@ main {
   background-color: white;
   margin: 2%;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 main p {
@@ -109,7 +113,7 @@ main p {
 
 main h2 {
   padding-top: 2%;
-  color: #A6035D;
+  color: #a6035d;
 }
 
 main ul {
@@ -117,7 +121,7 @@ main ul {
 }
 
 .link {
-  color: #D9042B;
+  color: #d9042b;
   text-decoration: none;
   font-weight: bold;
   font-style: italic;
@@ -127,7 +131,7 @@ main ul {
   font-size: 1.75em;
   font-weight: bold;
   text-align: center;
-  color: #D9042B;
+  color: #d9042b;
 }
 
 .round {
@@ -142,15 +146,14 @@ main ul {
   text-align: center;
 }
 
-
-strong{
-  text-shadow:2px 2px 6px #C4A589;
+strong {
+  text-shadow: 2px 2px 6px #c4a589;
 }
 
 /* CALL BUTTON */
 
 .tel-link {
-  background-color: #D9042B;
+  background-color: #d9042b;
   padding: 2%;
   width: 80%;
   margin: 0 auto;
@@ -168,56 +171,65 @@ strong{
 footer {
   text-align: center;
   font-size: 0.85em;
-  background-color: #A6035D;
+  background-color: #a6035d;
   color: white;
   padding: 1% 0%;
 }
 
 footer a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 /* TABLET VIEW */
 
 @media screen and (min-width: 620px), print {
-
   .tab-desk {
     display: block;
   }
 
-  .mobile {
+  .mobile,
+  .mobile-nav {
     display: none;
+  }
+
+  /* Tablet Nav Area */
+  nav ul {
+    list-style-type: none;
+    text-align: center;
   }
 
   nav li {
     border-top: none;
     display: inline-block;
     font-size: 1.25em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
   }
 
   nav li a {
     padding: 0.5em;
+    display: block;
+    color: white;
+    text-decoration: none;
   }
 
-  .grid{
+  .grid {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
   }
 
-  aside{
-    grid-column: 1/ span 2;
+  aside {
+    grid-column: 1 / span 2;
   }
-
 }
 
 /* LARGE DESKTOP */
 
 @media screen and (min-width: 1921px) {
-
   body {
-    background: linear-gradient(#C8E7E7, #C4A589);
+    background: linear-gradient(#c8e7e7, #c4a589);
   }
 
   #wrapper {
@@ -229,32 +241,28 @@ footer a {
     background-color: white;
   }
 
-  .grid{
+  .grid {
     grid-template-columns: auto auto auto auto;
   }
 
-  aside{
+  aside {
     grid-column: 1 / span 4;
     font-size: 3em;
   }
-
 }
 
 /* PRINT */
 
 @media print {
-
   body {
     background-color: white;
     color: black;
   }
-
 }
 
 /* DESKTOP */
 
 @media screen and (min-width: 1000px), print {
-
   nav li {
     font-size: 1.5em;
   }
@@ -265,15 +273,15 @@ footer a {
 
   nav li a:hover {
     color: white;
-    background-color: #D9042B;
+    background-color: #d9042b;
   }
 
-  .grid{
+  .grid {
     grid-template-columns: auto auto auto;
     grid-gap: 30px;
   }
 
-  aside{
+  aside {
     grid-column: 1 / span 3;
     font-size: 2em;
   }
@@ -281,5 +289,4 @@ footer a {
   #info ul {
     margin-left: 5%;
   }
-
 }
