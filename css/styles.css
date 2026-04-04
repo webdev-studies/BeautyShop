@@ -41,6 +41,23 @@ video {
   display: block;
 }
 
+/* Style rules for skip navigation link */
+.skip {
+  position: absolute;
+  left: -999px;
+}
+
+.skip:focus {
+  color: #fff;
+  background-color: #2a1f14;
+  text-decoration: none;
+  padding: 0.5%;
+  top: auto;
+  left: auto;
+  right: 1px;
+  z-index: 1;
+}
+
 /* MOBILE DISPLAY */
 
 .mobile {
@@ -181,6 +198,11 @@ footer a {
   text-decoration: none;
 }
 
+.social img {
+  display: inline-block;
+  padding: 4%;
+}
+
 /* TABLET VIEW */
 
 @media screen and (min-width: 620px), print {
@@ -222,6 +244,19 @@ footer a {
 
   aside {
     grid-column: 1 / span 2;
+  }
+
+  /* Tablet Viewport: Styles rules for footer area */
+  footer {
+    overflow: auto;
+  }
+  .copyright {
+    float: left;
+    width: 65%;
+  }
+  .social {
+    float: right;
+    width: 25%;
   }
 }
 
