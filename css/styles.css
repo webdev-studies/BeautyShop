@@ -4,17 +4,17 @@ Date: 09/04/2026
 */
 
 body {
-    background-color: #c8e7e7; /* Keeping your signature light blue background */
+    background-color: #c8e7e7; 
     font-family: 'Lora', serif;
 }
 
 .hero {
-    /* Updated with a beauty-themed background image placeholder */
+    /* Addinga beauty-themed background image placeholder */
     background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255, 0.4)), url(../images/close-up-collection-make-up-beauty-products.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh; /* Making it a bit more dramatic for beauty */
+    height: 80vh; 
 }
 
 .welcome {
@@ -34,7 +34,7 @@ body {
 }
 
 .bg-red {
-    background-color: #d9042b; /* Your accent red */
+    background-color: #d9042b;
 }
 
 .beauty-text {
