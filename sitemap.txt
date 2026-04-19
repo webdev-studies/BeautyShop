@@ -1,3 +1,5 @@
 http://www.joanneethebeauty.com/index.html
 http://www.joanneethebeauty.com/about.html
-http://www.joanneethebeauty.com.contact.html
+http://www.joanneethebeauty.com/contact.html
+http://www.joanneethebeauty.com/gallery.html
+http://www.joanneethebeauty.com/faqs.html
