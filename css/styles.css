@@ -9,6 +9,10 @@ body {
 }
 
 .hero {
+<<<<<<< HEAD
+=======
+    /* Addinga beauty-themed background image placeholder */
+>>>>>>> e90cce5defe3a5ea5d359c51d85dc7208d2c36d3
     background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255, 0.4)), url(../images/close-up-collection-make-up-beauty-products.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,7 +37,11 @@ body {
 }
 
 .bg-red {
+<<<<<<< HEAD
     background-color: #d9042b; 
+=======
+    background-color: #d9042b;
+>>>>>>> e90cce5defe3a5ea5d359c51d85dc7208d2c36d3
 }
 
 .beauty-text {

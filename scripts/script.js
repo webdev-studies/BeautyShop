@@ -1,27 +1,4 @@
-// This function allows me to toggle on and off the hamburger navigations menu
-function hamburger() {
-  var navlinks = document.getElementById("nav-links");
-  var menuicon = document.getElementById("icon");
-  if (navlinks.style.display === "block") {
-    navlinks.style.display = "none";
-    menuicon.style.color = "black";
-  } else {
-    navlinks.style.display = "block";
-    menuicon.style.color = "#f6eee4";
-  }
-}
-
-
-
-
-
-
-// Global Variables
-var answer = document.querySelector("#answer p");
-var heading = document.querySelector("#answer h3"); // Note: Changed to h3 to match the FAQ HTML provided earlier
-
-// Hamburger menu function
-
+// This Hamburger menu function allows me to toggle on and off the hamburger navigations menu
 function hamburger() {
     var navlinks = document.getElementById("nav-links");
     var menuicon = document.getElementById("icon");
@@ -30,9 +7,17 @@ function hamburger() {
         menuicon.style.color = "#2a1f14";
     } else {
         navlinks.style.display = "block";
-        menuicon.style.color = "#ff69b4"; // Changed to a pinkish color to match a beauty theme
+        menuicon.style.color = "#ff69b4"; 
     }
 }
+
+
+
+
+// Global Variables
+var answer = document.querySelector("#answer p");
+var heading = document.querySelector("#answer h3"); 
+
 
 // Function to display the first answer (Cancellation Policy)
 function ans1() {

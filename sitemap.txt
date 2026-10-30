@@ -1,6 +1,12 @@
 http://www.joanneethebeauty.com/index.html
 http://www.joanneethebeauty.com/about.html
+<<<<<<< HEAD
 http://www.joanneethebeauty.com/gallery.html
 http://www.joanneethebeauty.com/partnership.html
 http://www.joanneethebeauty.com/faqs.html
 http://www.joanneethebeauty.com.contact.html
+=======
+http://www.joanneethebeauty.com/contact.html
+http://www.joanneethebeauty.com/gallery.html
+http://www.joanneethebeauty.com/faqs.html
+>>>>>>> e90cce5defe3a5ea5d359c51d85dc7208d2c36d3
